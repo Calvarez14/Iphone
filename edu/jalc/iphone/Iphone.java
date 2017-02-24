@@ -6,9 +6,9 @@ import edu.jalc.size.ScreenSize;
 
 public class Iphone{
 
-  private IphoneColor iphoneColor;
-  private IphoneLogo iphoneLogo;
-  private ScreenSize screenSize;
+  private final IphoneColor iphoneColor;
+  private final IphoneLogo iphoneLogo;
+  private final ScreenSize screenSize;
 
   private Iphone(){
     this.iphoneColor = null;
