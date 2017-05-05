@@ -1,6 +1,9 @@
 package edu.jalc.logo;
 
-public class IphoneLogo{
+import edu.jalc.interfaces.Changeable;
+import edu.jalc.interfaces.Coverable;
+
+public class IphoneLogo implements Changeable, Coverable{
    private final double width;
    private final double height;
 
@@ -20,6 +23,14 @@ public class IphoneLogo{
 
    public double getHeight(){
      return this.height;
+   }
+
+   public void change(){
+     System.out.println("Changing the logo on the Iphone.");
+   }
+
+   public void cover(){
+     System.out.println("Covering the logo on the Iphone.");
    }
 
 }

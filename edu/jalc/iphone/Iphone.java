@@ -3,8 +3,11 @@ package edu.jalc.iphone;
 import edu.jalc.color.IphoneColor;
 import edu.jalc.logo.IphoneLogo;
 import edu.jalc.size.ScreenSize;
+import edu.jalc.interfaces.Chargeable;
+import edu.jalc.interfaces.Powerable;
+import edu.jalc.interfaces.Coverable;
 
-public class Iphone{
+public class Iphone implements Chargeable, Powerable, Coverable{
 
   private final IphoneColor iphoneColor;
   private final IphoneLogo iphoneLogo;
@@ -32,6 +35,18 @@ public class Iphone{
 
   public ScreenSize getScreenSize(){
     return screenSize;
+  }
+
+  public void charge(){
+    System.out.println("The Iphone is charging.");
+  }
+
+  public void power(){
+    System.out.println("The Iphone is being turn on or off.");
+  }
+
+  public void cover(){
+    System.out.println("The Iphone now has a cover");
   }
 
 }
